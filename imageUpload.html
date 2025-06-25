@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이미지 업로드</title>
+  <link rel="stylesheet" href="indexStyles.css" />
+  <script type="module" src="src/imageUpload.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>이미지 업로드</h1>
+    <form id="upload-form">
+      <div class="input-block">
+        <label for="item-id">문항 ID</label>
+        <input type="text" id="item-id" required />
+      </div>
+      <div class="input-block">
+        <label for="grade">대상 학년</label>
+        <input type="text" id="grade" required />
+      </div>
+      <div class="input-block">
+        <label for="subject">영역</label>
+        <input type="text" id="subject" required />
+      </div>
+      <div class="input-block">
+        <label for="image-file">이미지 첨부</label>
+        <input type="file" id="image-file" accept="image/*" required />
+      </div>
+      <button type="submit">업로드</button>
+    </form>
+    <a href="index.html" class="nav-button">홈으로</a>
+  </div>
+</body>
+</html>
